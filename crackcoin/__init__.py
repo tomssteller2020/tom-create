@@ -1,7 +1,4 @@
-import databasing.py, mining.py, networks.py, eccs.py, encodings.py, networks.py, threads.py
-from hashlib import sha256
-
-db 				= databasing.crackDB()
+db 			= databasing.crackDB()
 miner			= mining.crackcoinMiner()
 network 		= networks.crackcoinNetwork()
 
