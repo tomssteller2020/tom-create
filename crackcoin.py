@@ -25,7 +25,7 @@ if __name__ == "__main__":
 
 			if ui == 'h':
 				for c in commands:
-					print "%s: %s" % (c, commands[c])
+					print ("%s: %s") % (c, commands[c])
 
 			if ui == 't':
 				to = raw_input("To: ")
@@ -39,12 +39,12 @@ if __name__ == "__main__":
 				crackcoin.network.broadcastSync()
 
 		except KeyboardInterrupt:
-			print "Exiting ..."
+			print ("Exiting ...")
 			running = False
 			break
 				
 		except Exception as e:
-			print "Exception in main: " + e.message
+			print ("Exception in main: ") + e.message
 			break
 
 	crackcoin.network.stopServer = True
