@@ -14,7 +14,7 @@ newAddress = crackcoin.wallets.publicKeyToAddress(compressedPublicKey)
 
 #print newAddress[:9]
 #if newAddress[:9] in coolAddressNames:
-print "Private key:\n\t%s" % privateKey
+print ("Private key:\n\t%s" % privateKey)
 #print publicKey
-print "Compressed public key:\n\t%s" % compressedPublicKey
-print "Address:\n\t%s" % newAddress
+print ("Compressed public key:\n\t%s" % compressedPublicKey)
+print ("Address:\n\t%s" % newAddress)
